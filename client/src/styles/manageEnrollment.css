@@ -1,0 +1,104 @@
+/* manageEnrollment.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.body {
+    /* margin: 50px; */
+    padding: 70px 40px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+h2 {
+    color: white;
+}
+
+button {
+    padding: 10px;
+    background-color: #c22d2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button {
+    margin: 0 10px 0 10px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.add-course-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subb-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #c22d2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.success-message {
+    color: #c22d2d;
+    font-weight: bold;
+}
+
+.course-list {
+    margin: 0px 40px 0px 40px;
+    overflow-x: auto;
+    /* Add horizontal scrollbar if needed */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    color: white;
+}
+
+th {
+    background-color: #c22d2d;
+    color: white;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .body {
+        padding: 10px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}

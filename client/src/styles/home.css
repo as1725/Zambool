@@ -1,0 +1,158 @@
+/* Ensure the html and body take up the full height of the page */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #181717;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed; /* Make the navbar fixed to the top of the window */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  background-color: #c22d2d; /* Red background */
+  z-index: 1000; /* Ensure the navbar is above other content */
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+/* Adjust the .home-container to account for the navbar's space */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 20px); /* Subtract the navbar's height */
+  background-color: #181717; /* Black background */
+  color: #fff; /* White text for better contrast on black background */
+  padding-top: 60px; /* Add padding to the top to push down the content below the navbar */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+
+.home-container h1 {
+  color: #fff; /* White text for better contrast on black background */
+  font-size: 2rem;
+  margin-bottom: 150px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
+.nav-link,
+.logout-button {
+  text-decoration: none;
+  color: #fff; /* White text for better contrast on red background */
+  cursor: pointer;
+}
+
+.logout-button {
+  border: none;
+  background: none;
+}
+
+/* Grid system styles */
+.enroll-container {
+  width: 100px; 
+  /* height: 100vh; */
+  /* margin: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem; */
+  width: calc(100% - 4rem); /* Adjusted width to account for padding */
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box; /* Make sure padding is included in the width calculation */
+}
+
+.enrollment-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  height: auto;
+}
+
+.enrollment {
+  display: block; /* Make the link display as a block element */
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #222;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit the text color from parent */
+}
+
+.enrollment img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  height: auto;
+}
+
+.enrollment:hover {
+  background-color: #333;
+}
+
+
+
+.enrollment h2 {
+  margin-top: 15px;
+}
+
+/* Additional styling adjustments may be necessary depending on the rest of your content */
+.search-item {
+  margin-left: auto; /* Pushes the search bar to the end of the nav */
+}
+
+.search-container {
+  flex-grow: 1; /* Allows the search container to grow and take available space */
+  display: flex;
+  justify-content: center; /* Centers the search form */
+  padding: 0 20px; /* Provides some spacing on the sides */
+}
+
+.search-form {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  background-color: #fff; /* White background for the search bar */
+  border-radius: 20px; /* Rounded corners for the search bar */
+  overflow: hidden; /* Ensures children don't overflow the rounded corners */
+}
+
+.search-input {
+  border: none;
+  padding: 8px 16px;
+  outline: none; /* Removes the default focus outline */
+  flex-grow: 1; /* Allows the input to grow and fill the space */
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #f0ad4e; /* A shade of orange for the button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.search-button:hover {
+  background-color: #ec971f; /* Darker shade of orange on hover */
+}
+
+/* Continue with the rest of your styles... */

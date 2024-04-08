@@ -1,0 +1,87 @@
+.enrollment-container {
+  height: 70vh;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: calc(100% - 4rem); /* Adjusted width to account for padding */
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box; /* Make sure padding is included in the width calculation */
+  background-color: #181717;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #181717;
+}
+
+.enrollment {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  margin: 0; /* Ensure there are no external margins causing overflow */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.enrollment:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.enrollment img {
+  max-width: 100%;
+  height: 150px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.enrollment h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0;
+}
+
+.enrollment-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.enrollment-popup-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.enrollment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.enrollment-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #c22d2d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
